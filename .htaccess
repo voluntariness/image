@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule upload server.php/upload [L,QSA]
+RewriteCond $1 !^(server\.php|jscss|images|robots\.txt|$)
+RewriteRule ^(.*)$ server.php/$1 [L,QSA]

@@ -1,0 +1,84 @@
+body
+{
+    min-width: 1340px;
+    margin: 0px;
+    padding: 0px;
+}
+/* common */
+input.invalid{ border:1px solid #fd6f6f; background: #ffe4e4; }
+
+#alert-modal .modal-title { font-weight: bold; }
+#alert-model #message-content{ font-weight: bold; }
+#alert-modal .modal-header { border-radius: 6px 6px 0 0 }
+#alert-modal .my-alert-info     .modal-header { background: #46B8DA; color: #fff;}
+#alert-modal .my-alert-info   #message-content { color: #46B8DA; }
+#alert-modal .my-alert-primary  .modal-header { background: #428BCA; color: #fff;}
+#alert-modal .my-alert-primary   #message-content { color: #428BCA; }
+#alert-modal .my-alert-success  .modal-header { background: #5CB85C; color: #fff;}
+#alert-modal .my-alert-success   #message-content { color: #5CB85C; }
+#alert-modal .my-alert-warning  .modal-header { background: #D58512; color: #fff;}
+#alert-modal .my-alert-warning   #message-content { color: #D58512; }
+#alert-modal .my-alert-danger   .modal-header { background: #D43F3A; color: #fff;}
+#alert-modal .my-alert-danger   #message-content { color: #D43F3A; }
+
+/* template */
+    /* header */
+        header {
+            background: #222;
+            display: block;
+            height: 60px;
+            min-width: 1340px;
+            position: relative;
+        }
+        #login-panel {
+            bottom: 10px;
+            line-height: 40px;
+            position: absolute;
+            right: 20px;
+        }
+        #user-info {
+            color: #fff;
+            left: 20px;
+            line-height: 60px;
+            position: absolute;
+            top: 0px;
+
+        }
+        #header-menu {
+            bottom: 10px;
+            left:150px;
+            position: absolute;
+        }
+        #alert-message {
+            position: absolute;
+            width: 400px;
+            top: 70px;
+            left: 700px;
+            height: 45px;
+            z-index: 100;
+        }
+        #main {
+            display: inline-block;
+            min-height: 480px;
+            width:100%;
+        }
+
+    /* footer */
+        footer {
+            /*border:1px solid #888;*/
+            border-left:0;
+            border-right:0;
+            color: #555;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+    #login-message {
+        text-align: center;
+    }
+
+#holder { border: 10px dashed #ccc; width: 600px; height: 300px; margin: 20px auto;}
+#holder.hover { border: 10px dashed #333; }
