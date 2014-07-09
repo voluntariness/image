@@ -13,6 +13,5 @@
 
 
 Route::get('/', 'HomeController@index');
-Route::get('/tt', 'HomeController@index');
-// Route::get('/{key}', 'HomeController@image');
+Route::get('/{key}', 'HomeController@image');
 Route::post('/upload', 'HomeController@upload');
