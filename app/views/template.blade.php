@@ -18,9 +18,8 @@
         <header>
         </header>
     @show
-    <div id="main" class="well">
-    
-            @yield('content')
+    <div id="main" class="well row">
+        @yield('content')
     </div>
     @section('footer')
         <footer >

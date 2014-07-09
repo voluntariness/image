@@ -15,3 +15,4 @@
 Route::get('/', 'HomeController@index');
 Route::get('/{key}', 'HomeController@image');
 Route::post('/upload', 'HomeController@upload');
+Route::post('/imgs', 'HomeController@imgs');

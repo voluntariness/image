@@ -82,3 +82,56 @@ input.invalid{ border:1px solid #fd6f6f; background: #ffe4e4; }
 
 #holder { border: 10px dashed #ccc; width: 600px; height: 300px; margin: 20px auto;}
 #holder.hover { border: 10px dashed #333; }
+
+#image-list {
+    list-style: none;
+    padding: 10px;
+}
+#image-list > li {
+    line-height: 30px;
+    margin-top : 10px;
+}
+#image-list > li > img {
+    height:28px;
+    padding:1px;
+    background: #eee;
+}
+#image-list > li > a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+
+#upload-queue { 
+    /*border: 1px solid #000;*/
+    position: fixed;
+    /*font-weight: bold;*/
+    right : 10px;
+    top: 100px;
+    width: 200px;
+}
+#upload-queue > .queue {
+    background: #333;
+    line-height: 30px;
+    color: #fff;
+    padding: 5px;
+    font-style: 18px;
+    margin: 10px 0 0 20px;
+    width: 200px;
+    transition: .5s;
+    opacity: 0;
+}
+#upload-queue > .queue > img {
+    height:28px;
+    padding:1px;
+    background: #eee;
+}
+#upload-queue > .queue > label {
+    margin-left: 10px;
+}
+#upload-queue > .queue.show{
+    opacity: 1;
+    margin-left: 0px;
+}
+
