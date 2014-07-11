@@ -11,7 +11,6 @@ $(function(){
         window.history.back();
     });
 
-
 });
 
 /* ajax 設定 */

@@ -1,4 +1,8 @@
 RewriteEngine on
 RewriteBase /
-RewriteCond $1 !^(server\.php|jscss|images|robots\.txt|$)
-RewriteRule ^(.*)$ server.php/$1 [L,QSA]
+
+RewriteCond $1 ^(.*)$
+RewriteRule ^_(.*)$ upload/$1
+
+RewriteCond $2 !^(server\.php|jscss|images|robots\.txt|$)
+RewriteRule ^([^_]*)$ server.php/$2 [L,QSA]
